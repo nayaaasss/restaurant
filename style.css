@@ -1,0 +1,531 @@
+@import url("https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&family=Inter:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-color: #ffc8dd;
+  --bg-color-secondary: #ffafcc;
+  --text-color: #101a24;
+  --text-color-secondary: #5c6574;
+  --btn-color: #98c1d9;
+  --btn-color-2: #a2d2ff;
+  --font-judul: "David Libre", serif;
+  --font-isi: "Inter", sans-serif;
+}
+body {
+  background-color: var(--bg-color);
+}
+
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 100px;
+  background-color: var(--bg-color);
+  display: flex; /*agar isi header nya sejajar */
+  justify-content: space-between; /*agar jaraknya teratur */
+  text-align: center;
+}
+
+.logo {
+  margin-top: 6px;
+}
+
+.navbar {
+  margin-top: 32px;
+}
+
+.navbar a {
+  margin-right: 45px;
+  color: var(--text-color);
+  font-family: var(--font-isi);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+}
+
+.btn-color {
+  margin-top: 15px;
+  background-color: var(--btn-color);
+  color: #fff;
+  font-family: var(--font-judul);
+  font-size: 16px;
+  padding-top: 9px;
+  padding-bottom: 6px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* padding: 10px 15px; */
+  font-weight: 500;
+  line-height: 29px;
+  border-radius: 15px 0;
+}
+
+.hero {
+  display: flex;
+  padding: 30px 100px;
+}
+
+.hero .left {
+  margin-top: 325px;
+  margin-right: 150px;
+  margin-bottom: 100px;
+}
+
+.hero .left h1 {
+  color: var(--text-color);
+  font-family: David Libre;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 72px;
+}
+
+.hero .left p {
+  color: var(--text-color-secondary);
+  font-family: var(--font-isi);
+  margin-top: 69px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 181.25% */
+}
+
+.btn-hero {
+  margin-top: 49px;
+  margin-bottom: 60px;
+}
+
+.menu {
+  color: #fff;
+  background-color: var(--text-color);
+  font-family: var(--font-judul);
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-right: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  border-radius: 15px 0;
+  transform: scale(1.08);
+}
+
+.book {
+  color: #fff;
+  background-color: var(--btn-color-2);
+  font-family: var(--font-judul);
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-right: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  border-radius: 15px 0;
+}
+
+.social-media a {
+  display: inline-flex;
+  margin-right: 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  background: transparent; /*membuat border bulat  */
+  border: 1px solid var(--text-color);
+  padding: 10px;
+  border-radius: 50%;
+  color: var(--text-color);
+}
+
+.right {
+  margin-top: 200px;
+  margin-bottom: 150px;
+}
+
+.dish {
+  padding: 30px 100px;
+  background-color: var(--bg-color-secondary);
+}
+
+.dish h1 {
+  text-align: center;
+  color: var(--text-color);
+  font-family: var(--font-judul);
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 65px;
+  margin-top: 60px;
+}
+
+.dish .keterangan {
+  margin-top: 21px;
+  color: var(--text-color);
+  text-align: center;
+  font-family: var(--font-isi);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 181.25% */
+}
+
+.dish-menu {
+  display: flex; /*agar semua dish menunya sejajar kesamping */
+  margin-top: 116px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.dish-menu .dish-card {
+  background: none;
+  border: 2px solid var(--bg-color);
+  padding: 1.5rem 2rem 51px;
+  border-radius: 20px 0;
+  transition: 1s ease; /* kalau dipencet ada transisi */
+  text-align: center;
+}
+
+.dish-menu .dish-card:hover {
+  background: var(--bg-color);
+  transform: scale(1.08); /*bahan buat transisi */
+}
+
+.dish-menu .dish-card img {
+  margin-bottom: 15px;
+}
+
+.dish-menu .dish-card h3 {
+  color: var(--text-color);
+  text-align: center;
+  font-family: var(--font-judul);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.dish-menu .dish-card p {
+  margin-top: 2px;
+  color: var(--text-color-secondary);
+  text-align: center;
+  font-family: var(--font-isi);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 173.333% */
+}
+
+/* welcom */
+
+.welcome {
+  padding: 30px 100px 100px;
+  background: var(--bg-color-secondary);
+  display: flex;
+}
+
+.welcome img {
+  margin-top: 130px;
+  width: 519px;
+  height: 476px;
+}
+
+.content {
+  margin-top: 280px;
+  margin-left: 37px;
+}
+.btn-content {
+  padding-top: 25px;
+}
+
+.content h1 {
+  color: var(--text-color);
+  font-family: var(--font-judul);
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 65px;
+  margin-bottom: 30px;
+}
+
+.content p {
+  color: var(--text-color-secondary);
+  font-family: var(--font-isi);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 181.25% */
+}
+
+/* chef section */
+
+.chef {
+  display: flex;
+  padding: 100px 100px;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.expects-chef {
+  margin-top: 100px;
+}
+
+.expects-chef h1 {
+  color: var(--text-color);
+  font-family: var(--font-judul);
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 65px; /* 108.333% */
+  margin-bottom: 18px;
+}
+
+.expects-chef .chef-des {
+  color: var(--text-color-secondary);
+  font-family: var(--font-isi);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 181.25% */
+}
+
+.skills {
+  display: flex;
+  padding: 20px;
+}
+
+.point {
+  display: flex;
+  margin-bottom: 33px;
+  margin-left: 10px;
+}
+
+.point img {
+  width: 23.802px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+.point p {
+  color: var(--text-color-secondary);
+  font-family: var(--font-isi);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 140% */
+}
+
+/* customer */
+
+.customer {
+  padding: 50px 100px;
+  background: var(--bg-color-secondary);
+}
+
+.customer h1 {
+  justify-content: center;
+  text-align: center;
+  color: var(--text-color);
+  font-family: var(--font-judul);
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 65px; /* 108.333% */
+}
+
+.customer .cus-des {
+  margin-top: 18px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 376px;
+  height: 56px;
+  flex-shrink: 0;
+  color: var(--text-color-secondary);
+  text-align: center;
+  font-family: var(--font-isi);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+}
+
+.customer .warp-card {
+  display: flex;
+  margin-top: 50px;
+  gap: 100px;
+}
+
+.card-customer {
+  background: var(--bg-color);
+  text-align: center;
+  padding: 25px 30px;
+  border-radius: 80px 20px;
+}
+
+.card-customer .img-cus {
+  margin-bottom: 20px;
+}
+
+.coment {
+  margin-top: 20px;
+  color: var(--text-color-secondary);
+  text-align: center;
+  font-family: var(--font-isi);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+}
+
+.name-cus{
+    margin-top: 16px;
+    color: var(--text-color);
+text-align: center;
+font-family: var(--font-isi);
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 29px; /* 181.25% */
+}
+
+.jabatan{
+    color: #5C6574;
+text-align: center;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 29px; /* 193.333% */
+}
+
+/* footer */
+
+.footer {
+    padding: 100px 100px;
+}
+
+.atas {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.address img {
+    margin-bottom: 21px;
+}
+
+.address .add {
+    color: var(--text-color-secondary);
+    font-family: var(--font-isi);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    width: 408px;
+    height: 90px;
+    flex-shrink: 0;
+}
+
+.open {
+    margin-top: 10px;
+    color: var(--text-color);
+    font-family: var(--font-isi);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; 
+}
+
+.hours {
+    display: flex;
+}
+
+.day {
+    margin-right: 25px;
+    color: var(--text-color-secondary);
+    font-family: var(--font-isi);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px; 
+}
+
+.navigation-footer {
+    display: flex;
+    flex-direction: column; /* agar kebawah */
+}
+
+.tittle-footer {
+    color: var(--text-color);
+    font-family: var(--font-isi);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; 
+    text-transform: uppercase;
+}
+
+.navigation-footer a {
+    color: var(--text-color-secondary);
+    font-family: var(--font-isi);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 250% */
+}
+
+.dishes-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.dishes-footer a {
+    color: var(--text-color-secondary);
+    font-family: var(--font-isi);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 250% */
+}
+
+.sosmed-footer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    background: transparent; /*membuat border bulat  */
+    border: 1px solid var(--text-color);
+    padding: 7px;
+    border-radius: 50%;
+    color: var(--text-color);
+}
+
+.bawah {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bawah p {
+    color:var(--text-color-secondary);
+    font-family: var(--font-isi);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px; /* 181.25% */
+}
+
+.privacy {
+    display: flex;
+    gap: 10px;
+}
+
